@@ -32,7 +32,7 @@ To run this script, you need the following:
 
     ```bash
     git clone https://github.com/Cutekitty0000/WiFi-Deauth-Script.git
-    cd WiFi-Deauth-Script
+    cd WiFi-Deauther
     ```
 
 2. **Run the script with sudo privileges:**
