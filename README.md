@@ -1,4 +1,4 @@
-# Wi-Fi Deauthentication Script
+# Wi-Fi Deauther Script By Navaneetha Krishnan
 
 This script automates the process of scanning for Wi-Fi networks and deauthenticating users from a selected wireless network. It is intended for educational purposes only, to understand how wireless security works and the importance of securing your own networks.
 
