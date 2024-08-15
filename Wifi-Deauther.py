@@ -38,17 +38,17 @@ print("Linkedin : https://in.linkedin.com/in/navaneetha-krishnan-m-8b41b52a1\n\n
 
 
 if not 'SUDO_UID' in os.environ.keys():
-    print("Try running this program with sudo.")
+    print("Use sudo!, We are using Hardware here!")
     exit()
 
 for file_name in os.listdir():
     if ".csv" in file_name:
-        print("There should be no .csv files in your directory. So Creating a Backup dir")
+        print("There should be no .csv files in your dir ok?. So Creating a Backup dir")
         directory = os.getcwd()
         try:
             os.mkdir(directory + "/backup/")
         except:
-            print("Backup folder exists.")
+            print("Backup exists.")
         timestamp = datetime.now()
         shutil.move(file_name, directory + "/backup/" + str(timestamp) + "-" + file_name)
 
@@ -65,7 +65,7 @@ for index, item in enumerate(check_wifi_result):
     print(f"{index} - {item}")
 
 while True:
-    wifi_interface_choice = input("Please select the interface: ")
+    wifi_interface_choice = input("Select the wifi interface to use: ")
     try:
         if check_wifi_result[int(wifi_interface_choice)]:
             break
@@ -105,8 +105,7 @@ try:
                                 active_wireless_networks.append(row)
 
         print("Scanning. Press Ctrl+C to attack wireless network.\n")
-        print("No |\tBSSID              |\tWifwi Channel|\tESSID                         |")
-        print("___|\t___________________|\t_______|\t______________________________|")
+        print("No |||||\tWifi Name             |||||\tWifi Channels|\tID                         |||||")
         for index, item in enumerate(active_wireless_networks):
           
             print(f"{index}\t{item['BSSID']}\t{item['channel'].strip()}\t\t{item['ESSID']}")
